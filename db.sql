@@ -12,12 +12,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
-
 CREATE TABLE `alquiler` (
   `id` int(11) NOT NULL,
   `id_cliente` int(11) NOT NULL,
@@ -34,7 +28,7 @@ CREATE TABLE `alquiler` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `alquiler`
+-- Tabla `alquiler`
 --
 
 INSERT INTO `alquiler` (`id`, `id_cliente`, `id_vehiculo`, `num_dias`, `precio_dia`, `abono`, `fecha_prestamo`, `hora`, `fecha_devolucion`, `id_doc`, `observacion`, `estado`) VALUES
